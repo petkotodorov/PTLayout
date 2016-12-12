@@ -10,6 +10,7 @@
 		3D436CA21DFE96A10025A194 /* PTLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D436C981DFE96A10025A194 /* PTLayout.framework */; };
 		3D436CA71DFE96A10025A194 /* PTLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D436CA61DFE96A10025A194 /* PTLayoutTests.swift */; };
 		3D436CA91DFE96A10025A194 /* PTLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D436C9B1DFE96A10025A194 /* PTLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D436CB51DFED5260025A194 /* PTLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D436CB41DFED5260025A194 /* PTLayoutManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3D436CA11DFE96A10025A194 /* PTLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D436CA61DFE96A10025A194 /* PTLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTLayoutTests.swift; sourceTree = "<group>"; };
 		3D436CA81DFE96A10025A194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D436CB41DFED5260025A194 /* PTLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTLayoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				3D436C9B1DFE96A10025A194 /* PTLayout.h */,
 				3D436C9C1DFE96A10025A194 /* Info.plist */,
+				3D436CB41DFED5260025A194 /* PTLayoutManager.swift */,
 			);
 			path = PTLayout;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D436CB51DFED5260025A194 /* PTLayoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +368,7 @@
 		3D436CB01DFE96A10025A194 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y9P8PV9GUM;
 				INFOPLIST_FILE = PTLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -376,6 +381,7 @@
 		3D436CB11DFE96A10025A194 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Y9P8PV9GUM;
 				INFOPLIST_FILE = PTLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
