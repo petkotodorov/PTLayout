@@ -149,6 +149,7 @@
 					3D436C971DFE96A10025A194 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = Y9P8PV9GUM;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					3D436CA01DFE96A10025A194 = {
@@ -322,6 +323,7 @@
 		3D436CAD1DFE96A10025A194 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y9P8PV9GUM;
@@ -334,6 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pt.PTLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +344,7 @@
 		3D436CAE1DFE96A10025A194 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y9P8PV9GUM;
