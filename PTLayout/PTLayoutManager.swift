@@ -57,8 +57,16 @@ public class PTLayoutManager {
                                                  constant: width)
         view.addConstraint(constraint)
     }
-
-
-
     
+    public class func setWidthProportionalToSuperview (view: UIView, multiplier: CGFloat) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let constraint = NSLayoutConstraint.init(item: view,
+                                                 attribute: .width,
+                                                 relatedBy: .equal,
+                                                 toItem: view.superview,
+                                                 attribute: .width,
+                                                 multiplier: multiplier,
+                                                 constant: 0.0)
+        view.addConstraint(constraint)
+    }
 }
