@@ -69,4 +69,17 @@ public class PTLayoutManager {
                                                  constant: 0.0)
         view.addConstraint(constraint)
     }
+    
+    public class func setHeightProportionalToSuperview (view: UIView, multiplier: CGFloat) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        let constraint = NSLayoutConstraint.init(item: view,
+                                                 attribute: .height,
+                                                 relatedBy: .equal,
+                                                 toItem: view.superview,
+                                                 attribute: .height,
+                                                 multiplier: multiplier,
+                                                 constant: 0.0)
+        view.addConstraint(constraint)
+    }
+
 }
