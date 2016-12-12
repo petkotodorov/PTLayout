@@ -13,10 +13,10 @@ public class PTLayoutManager {
     public class func centerHorizontallyInContainer (_ viewToCenter: UIView) {
         viewToCenter.translatesAutoresizingMaskIntoConstraints = false
         let constraint = NSLayoutConstraint.init(item: viewToCenter,
-                                                 attribute: .centerY,
+                                                 attribute: .centerX,
                                                  relatedBy: .equal,
                                                  toItem: viewToCenter.superview,
-                                                 attribute: .centerY,
+                                                 attribute: .centerX,
                                                  multiplier: 1.0,
                                                  constant: 0.0)
         viewToCenter.superview?.addConstraint(constraint)
@@ -25,10 +25,10 @@ public class PTLayoutManager {
     public class func centerVerticallyInContainer (_ viewToCenter: UIView) {
         viewToCenter.translatesAutoresizingMaskIntoConstraints = false
         let constraint = NSLayoutConstraint.init(item: viewToCenter,
-                                                 attribute: .centerX,
+                                                 attribute: .centerY,
                                                  relatedBy: .equal,
                                                  toItem: viewToCenter.superview,
-                                                 attribute: .centerX,
+                                                 attribute: .centerY,
                                                  multiplier: 1.0,
                                                  constant: 0.0)
         viewToCenter.superview?.addConstraint(constraint)
